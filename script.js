@@ -1,155 +1,220 @@
-let videos = [
-  {
-    title: "Photoshop tutorial",
-    lengthInMinutes: 70,
-    category: "Education",
-    uploadDate: new Date("07-22-2019"),
-    tags: "design, digital, photoshop, creativity",
-    features: ["Live", "360°", "HDR"],
-    viewCount: 4700,
-    rating: 4.3
-  },
-  {
-    title: "Episode # 01 - The Best Comedy Show",
-    lengthInMinutes: 19,
-    category: "Entertainment",
-    uploadDate: new Date("07-03-2019"),
-    tags: "comedy, funny",
-    features: ["Subtitles/CC", "3D", "HD"],
-    viewCount: 145615,
-    rating: 3.9
-  },
-  {
-    title: "How to use FOR EACH loop - tutorial by Tech Karo",
-    lengthInMinutes: 2,
-    category: "Education",
-    uploadDate: new Date("11-10-2018"),
-    tags: "javascript, loops, web development",
-    features: ["Purchased", "HD"],
-    viewCount: 9004,
-    rating: 4.5
-  },
-  {
-    title: "How to use FOR EACH loop - tutorial by Tech Karo",
-    lengthInMinutes: 6,
-    category: "Education",
-    uploadDate: new Date("11-10-2018"),
-    tags: "javascript, loops, web development",
-    features: ["Purchased", "HD"],
-    viewCount: 9004,
-    rating: 4.5
-  },
-  {
-    title: "WORD PRESS - INTRODUCTION",
-    lengthInMinutes: 6,
-    category: "Education",
-    uploadDate: new Date("11-10-2018"),
-    tags: "earn online, web development",
-    features: ["Purchased", "HD"],
-    viewCount: 1584,
-    rating: 4.6
-  },
-  {
-    title: "funny clips",
-    lengthInMinutes: 6,
-    category: "Entertainment",
-    uploadDate: new Date("10-12-2018"),
-    tags: "comedy, funny",
-    features: ["Purchased", "HD"],
-    viewCount: 9004,
-    rating: 4.5
-  },
-  {
-    title: "Episode # 02 - The Best Comedy Show",
-    lengthInMinutes: 19,
-    category: "Entertainment",
-    uploadDate: new Date("08-03-2019"),
-    tags: "comedy, funny",
-    features: ["Subtitles/CC", "3D", "HD"],
-    viewCount: 145312,
-    rating: 3.4
-  },
-
-];
-
-// 1.Print each video in this format:
-// Title: Photoshop tutorial
-// Length: 70 minutes
-// Category: Education
-// Views: 4,700
-// Uploaded On: 22-July-2019
-// Rating: 
-
-for (let i = 0; i < videos.length; i++) {
-  // console.log("Title: " + videos[i].title);
-  // console.log("Length: " + videos[i].lengthInMinutes);
-  // console.log("Category: " + videos[i].category );
-  // console.log( "Views: " + videos[i].viewCount)
-  function nameDate(dat) {
-    let month = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-    return month[dat.getMonth()];
-    }
-    console.log("Uploaded on: " + videos[i].uploadDate + nameDate(new Date()));
-}
-
-console.log('t-2');
-
-// 2.Print titles of all short ( less than 3 minutes ) videos.
-// for(let i =0 ; i< videos.length; i++){
-//   if (videos[i].lengthInMinutes < 3){
-//     console.log(videos[i].title)
-//   }
-
-console.log('t-3');
-
-// 3.Print titles of all long ( greater than 20 minutes ) videos.
-
-// for (let i=0; i< videos.length; i++){
-//   if(videos[i].lengthInMinutes > 20){
-//     console.log(videos[i].title)
-//   }
-// }
-console.log('t-4');
-
-// 4.Print titles of all medium length videos.
-
-// for (let i=0; i< videos.length; i++){
-//   if(videos[i].lengthInMinutes > 4 && videos[i].lengthInMinutes <15){
-//     console.log(videos[i].title)
-//   }
-// }
-// console.log('t-5');
-
-//5.Print title of the longest video.
-
-
-
-
-
-
-// 6.Print titles of all "Educational" videos.
-
-// for (let i=0; i< videos.length; i++){
-//   if(videos[i].category ==="Education"){
-//     console.log(videos[i].title)
-//   }
-// }
-console.log('t-6');
-
-// 7.Print titles of all videos with tag "Javascript"
-
-// for (let i=0; i< videos.length; i++){
-//   if(videos[i].tags ==="Javascript"){
-//     console.log(videos[i].title)
-//   }
-// }
-console.log('t-7');
-
-
-// 8.Print titles of all videos with HD feature.
-
-// for (let i=0; i< videos.length; i++){
-//   if(videos[i].features["HD"] === true){
-//     console.log(videos[i].title)
-//   }
-// }
+students = [
+    let {
+     name: "Amna",
+     gender: "female",
+     dob: new Date("02-04-1990"),
+     address: {
+         ilaqa: "Gulistan-e-Johar",
+         city: "Karachi",
+         country: "Pakistan",
+         postalCode: 47114
+     },    
+     phoneNo: "0331-2324243",
+     admissionTestScore: 56,
+     hasInternet: true,
+     hasComputer: false,
+     hasJob: true,
+     hasSchoolBefore: false
+     },
+     {
+     name: "Hadia",
+     gender:"female",
+     dob: new Date("05-15-1984"),
+     address: {
+         ilaqa: "Lyari",
+         city: "Karachi",
+         country: "Pakistan",
+         postalCode: 75660
+     },
+     phoneNo: "0345-3452953",
+     admissionTestScore: 48,
+     hasInternet: false,
+     hasComputer: false,
+     hasJob: false,
+     hasSchoolBefore: true
+     },
+     {
+     name: "Ahmed",
+     gender: "male",
+     dob: new Date("06-27-2002"),
+     address: {
+         ilaqa: "University Road",
+         city: "Quetta",
+         country: "Pakistan",
+         postalCode: 82215
+     },
+     phoneNo: "0333-0124325",
+     admissionTestScore: 33,
+     hasInternet: true,
+     hasComputer: false,
+     hasJob: false,
+     hasSchoolBefore: false
+     },
+     {
+     name: "Fariha",
+     gender:"female",
+     dob: new Date("09-13-1998"),
+     address: {
+         ilaqa: "University Road",
+         city: "Karachi",
+         country: "Pakistan",
+         postalCode: 82215
+     },
+     phoneNo: "0331-9432532",
+     admissionTestScore: 33,
+     hasInternet: true,
+     hasComputer: false,
+     hasJob: false,
+     hasSchoolBefore: false
+     },
+     {
+     name: "Abdullah",
+     gender: "male",
+     dob: new Date("01-24-1972"),
+     address: {
+         ilaqa: "Bazar Colony",
+         city: "Lahore",
+         country: "Pakistan",
+         postalCode: 32212
+     },
+     phoneNo: "0345-9912121",
+     admissionTestScore: 33,
+     hasInternet: false,
+     hasComputer: false,
+     hasJob: true,
+     hasSchoolBefore: true
+     }
+ ];
+ // 1.Print each student in this format:
+ // Name: Amna
+ // Gender: Female
+ // City: Karachi
+ // Score: 56 marks
+ 
+ for(let i = 0; i < students.length; i++){
+     console.log("Name: " + students[i].name);
+     console.log("Gender: " + students[i].gender);
+     console.log("City: " + students[i].address.city);
+     console.log("Score: " + students[i].admissionTestScore + " marks");
+     console.log('')
+ }
+ 
+ // 2.Print names of female students only.
+ 
+ for (let i = 0 ; i< students.length; i++){
+     if(students[i].gender ==="female"){
+         console.log(students[i].name)
+     }
+ }
+ console.log('');
+ // 3.Print names of male students only.
+ 
+ for (let i = 0 ; i< students.length; i++){
+     if(students[i].gender ==="male"){
+         console.log(students[i].name)
+     }
+ }
+ console.log('');
+ 
+ // 4.Print names of students who have passed the admission test. Passing marks are 50.
+ 
+ for (let i=0 ; i <students.length;i++){
+     if (students[i].admissionTestScore >= 50){
+         console.log(students[i].name)
+     }
+ }
+ console.log('');
+ // 5.Print names of eligible students only (students who have internet and live in Karachi are eligible)
+ 
+ for (let i=0; i< students.length; i++ ){
+     if(students[i].hasInternet === true && students[i].address.city === "karachi"){
+         console.log(students[i].name)
+     }
+ }
+ 
+ console.log('');
+ // 6.Print address of each student in this format:
+ // Amna's address:
+ // Gulistan-e-Johar in Karachi, Pakistan
+ 
+ for (let i=0 ; i <students.length ; i++){
+     console.log(students[i].name + "'s address: \n" 
+     +students[i].address.ilaqa +" in " + students[i].address.city +", " + students[i].address.country )
+ }
+ 
+ console.log('');
+ 
+ // 7.Print names and phone number of students who have Ufone.
+ 
+ for (let i=0 ; i <students.length; i++){
+     if (students[i].phoneNo.charAt(2)== 3){
+         console.log(students[i].name)
+     }
+ }
+ 
+ console.log('');
+ 
+ // 8.Students who have a job or a class are placed in Group B. Print the names of students in Group A, and in Group B, in the below format:
+ // Group A:  name1, name2
+ // Group B:  name3, name4, name5
+ 
+ let groupA=[];
+ let groupB=[];
+ // khali array banany k  bad usmai .push kro yani k add kro koi string or call karo loops k bahar.
+ for (let i=0 ; i <students.length ; i++){
+     if(students[i].hasJob === true || students[i].hasSchoolBefore === true){
+         groupA.push(students[i].name);
+     }else{
+         groupB.push(students[i].name)
+     }
+ }
+ console.log("Group A: "+ groupA.join(", "));
+ console.log("Group B: " + groupB.join(', '));
+ console.log('');
+ 
+ // 9.Print age of each student in the below format:
+ // function calculateAge(dateOfBirth){
+ 
+ // },
+ 
+ // Amna's age is 29 years
+ 
+ for (let i=0 ; i < students.length; i++){
+     let dobYear = students[i].dob.getFullYear();
+     let todayYear= new Date().getFullYear();
+     let age = todayYear - dobYear;
+ 
+     let dobMonth = students[i].dob.getMonth();
+     let todayMonth= new date().getMonth();
+     
+     if(todayMonth < dobMonth){
+         age--;
+     }else if(todayMonth === dobMonth){
+         dob
+ 
+ 
+     }
+     console.log("")
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ // 10.Print the name of the oldest student.
+ // e.g
+ //     let oldestStudent= students[0];
+     
+ //     for (let i = 1; 1<students.length; i++){
+ //         if (students[i].age > oldestStudent.age{
+ //             oldestStudent= students[i];
+ //         } 
+ //     } 
+ // console.log(oldestStudent.name);
+ let oldestStudent
+ 
+ if (age < oldestStudents.age){
+ 
+ }
+ 
