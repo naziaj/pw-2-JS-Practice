@@ -81,38 +81,75 @@ let videos = [
 // Rating: 
 
 for (let i = 0; i < videos.length; i++) {
-  console.log("Title: " + videos[i].title);
-  console.log("Length: " + videos[i].lengthInMinutes);
-  console.log("Category: " + videos[i].category );
-  console.log( "Views: " + videos[i].viewCount)
-
+  // console.log("Title: " + videos[i].title);
+  // console.log("Length: " + videos[i].lengthInMinutes);
+  // console.log("Category: " + videos[i].category );
+  // console.log( "Views: " + videos[i].viewCount)
+  function nameDate(dat) {
+    let month = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+    return month[dat.getMonth()];
+    }
+    console.log("Uploaded on: " + videos[i].uploadDate + nameDate(new Date()));
 }
-console.log('');
+
+console.log('t-2');
 
 // 2.Print titles of all short ( less than 3 minutes ) videos.
-for(let i =0 ; i< videos.length; i++){
-  if (videos[i].lengthInMinutes < 3){
-    console.log(videos[i].title)
-  }
-}
-console.log('');
+// for(let i =0 ; i< videos.length; i++){
+//   if (videos[i].lengthInMinutes < 3){
+//     console.log(videos[i].title)
+//   }
+
+console.log('t-3');
 
 // 3.Print titles of all long ( greater than 20 minutes ) videos.
 
-for (let i=0; i< videos.length; i++){
-  if(videos[i].lengthInMinutes > 20){
-    console.log(videos[i].title)
-  }
-}
-console.log('');
+// for (let i=0; i< videos.length; i++){
+//   if(videos[i].lengthInMinutes > 20){
+//     console.log(videos[i].title)
+//   }
+// }
+console.log('t-4');
 
 // 4.Print titles of all medium length videos.
 
-for (let i=0; i< videos.length; i++){
-  if(videos[i].lengthInMinutes > 4 && videos[i].lengthInMinutes <15){
-    console.log(videos[i].title)
-  }
-}
-console.log('');
+// for (let i=0; i< videos.length; i++){
+//   if(videos[i].lengthInMinutes > 4 && videos[i].lengthInMinutes <15){
+//     console.log(videos[i].title)
+//   }
+// }
+// console.log('t-5');
 
 //5.Print title of the longest video.
+
+
+
+
+
+
+// 6.Print titles of all "Educational" videos.
+
+// for (let i=0; i< videos.length; i++){
+//   if(videos[i].category ==="Education"){
+//     console.log(videos[i].title)
+//   }
+// }
+console.log('t-6');
+
+// 7.Print titles of all videos with tag "Javascript"
+
+// for (let i=0; i< videos.length; i++){
+//   if(videos[i].tags ==="Javascript"){
+//     console.log(videos[i].title)
+//   }
+// }
+console.log('t-7');
+
+
+// 8.Print titles of all videos with HD feature.
+
+// for (let i=0; i< videos.length; i++){
+//   if(videos[i].features["HD"] === true){
+//     console.log(videos[i].title)
+//   }
+// }
